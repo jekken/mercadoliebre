@@ -1,0 +1,404 @@
+/*--------- ALL ---------*/
+html{
+    font-size : 12px;
+}
+*, body{    
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*--------- HEADER ---------*/
+header{
+    background-color : #EAC926;
+    padding-bottom: 10px;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-search{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoEmpresa, .barra-busqueda{
+    width: 50%;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+
+.barra-busqueda div{
+    display: flex;
+    flex-direction: row;  
+    position:relative;
+    height: 30px;
+    justify-content: center;
+
+}
+
+.barra-busqueda div input{
+    height: 100%;
+    width: 100%;
+}
+
+.barra-busqueda div{
+    max-width: 400px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    position:relative;
+    justify-content: center;
+
+}
+
+.fa-magnifying-glass{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    height: 100%;
+    min-width: 20px;
+    max-width: 50px;
+    right: 0px;
+    background-color : #ebebeb;
+    position: absolute;
+}
+
+.burger-menu{    
+    color : #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-bars{
+    border-radius: 5px;
+    font-size : 1.66em;
+    padding: 10px;
+    background-color : #1259c3;
+    box-sizing: border-box;
+}
+
+.icon-search{
+    width: 100%;
+}
+.barra-busqueda{
+    margin: 10px;
+}
+
+.menu {
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+ul{
+    list-style: none;
+}
+
+.compra{
+    width: 100%; 
+    text-align: center; 
+    padding: 10px;    
+}
+
+.hidden{
+    display:none;
+}
+
+/*--------- MAIN ---------*/
+
+main{
+    background-color : #ebebeb; 
+    margin: 20px 0px;
+}
+
+.form-bg{
+    margin: 0 auto;
+    background-color : #ffffff; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 15px;
+}
+
+.datatext{    
+    height: 30px;
+    width: 100%;
+}
+
+.datatext input{    
+    height: 100%;   
+    width: 100%;
+    border: 0px;
+    border-radius: 4px;
+    background-color : #ebebeb; 
+}
+
+.columns{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.datapicker{
+    height: 30px;
+    width: 100%;
+
+}
+
+.columns p{
+    font-size: 1.4em;
+    font-weight: bold; 
+
+}
+
+.sub-filas{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.perfiles{    
+    justify-content: space-evenly;
+}
+
+.sub-filas label input {
+    margin: 0px 10px;
+}
+
+.columns label input {
+    margin: 0px 10px;
+}
+
+
+.botones{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.boton-envia, .boton-reset{
+    border-radius: 3px; 
+    border-color: transparent;
+    color: #3483fa;
+    font-weight: bold; 
+    background-color: rgba(65,137,230,.15)
+    
+}
+
+.boton-envia:hover{
+    background-color: #0022AA;
+    color: #ffffff;  
+    font-weight: bold; 
+    
+}
+.boton-reset:hover{
+    background-color: #C41515;
+    color: #ffffff;  
+    font-weight: bold; 
+}
+
+.botones button{
+    flex: auto;
+    height: 100%;
+}
+
+/*--------- FOOTER ---------*/
+footer{
+    margin-top: auto;
+}
+
+footer div{
+    background-color : #ffffff;
+}
+
+.valores{    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div section{    
+    width: 100%;
+    display: flex;
+    text-align: center; 
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.derechos-autor{
+    text-align: left; 
+    padding: 12px 5px;
+    background-color : #ffffff;
+
+}
+
+.iconos-centrados{
+    font-size: 2em;
+    color: #1259c3;
+    padding: 10px;
+}
+
+.iconos-centrados:hover{
+    color: #FF9A56;
+}
+
+/*--------- MEDIA QUERIES ---------*/
+/*@media (min-width: 361px) {*/
+@media (min-width: 150px) {
+    
+    .intereses{    
+        justify-content: space-around;
+    }
+
+    .producto-base:hover .descripcion{
+        display: block;
+    }
+    .producto-base:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .menu{
+        display: none;
+    }
+
+    .burger-menu{
+        display: flex;
+    }
+    
+    .compra{
+        display: block
+    }
+    .producto-base{
+        max-width: 80%;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    .intereses{    
+        justify-content: center;
+    }
+
+    .UltimasVisitas, .Ofertas{  
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+    .producto-base{
+        max-width: 44%;
+    }
+
+}
+@media (min-width: 992px) {
+
+    .burger-menu{
+        display: none;
+    }
+    
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icon-search{
+        width: 70%;
+    }
+    .compra{
+        width: 30%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+    }
+
+    .menu-no-icons, .menu-icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;   
+    }
+    .menu-no-icons{
+        width: 30%;
+    }
+
+    .menu-icons{
+        width: 15%;
+    }
+
+    .menu-no-icons li a:hover, .menu-icons li a:hover{
+        color: #1259c3;  
+        font-weight: bold; 
+    }
+
+    .menu-no-icons li, .menu-icons li{
+        flex: auto;
+    }
+
+    .footer-center{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;    
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    .datatext, .columns, .botones{
+        width: 100%;
+    }
+
+    .form-bg{
+        width: 40%;
+    }
+
+}

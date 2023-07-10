@@ -1,0 +1,386 @@
+/*--------- ALL ---------*/
+html{
+    font-size : 12px;
+}
+*, body{    
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*--------- HEADER ---------*/
+header{
+    background-color : #EAC926;
+    padding-bottom: 10px;
+}
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-search{    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoEmpresa, .barra-busqueda{
+    width: 50%;
+    margin: 10px;
+    box-sizing: border-box;
+
+}
+
+.barra-busqueda div{
+    display: flex;
+    flex-direction: row;  
+    position:relative;
+    height: 30px;
+    justify-content: center;
+
+}
+
+.barra-busqueda div input{
+    height: 100%;
+    width: 100%;
+}
+
+.barra-busqueda div{
+    max-width: 400px;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    position:relative;
+    justify-content: center;
+
+}
+
+.fa-magnifying-glass{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    height: 100%;
+    min-width: 20px;
+    max-width: 50px;
+    right: 0px;
+    background-color : #ebebeb;
+    position: absolute;
+}
+
+.burger-menu{    
+    color : #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-bars{
+    border-radius: 5px;
+    font-size : 1.66em;
+    padding: 10px;
+    background-color : #1259c3;
+    box-sizing: border-box;
+}
+
+.icon-search{
+    width: 100%;
+}
+.barra-busqueda{
+    margin: 10px;
+}
+
+.menu {
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+ul{
+    list-style: none;
+}
+
+.compra{
+    width: 100%; 
+    text-align: center; 
+    padding: 10px;    
+}
+
+/*--------- MAIN ---------*/
+
+main{
+    background-color : #ebebeb; 
+    width: 90%;
+    margin: 0 auto;
+
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    box-sizing: border-box;
+}
+
+.banner img{
+    width: 100%;
+}
+
+h1{
+    font-size : 2em;
+}
+
+.producto-base{
+    background-color : #ffffff;  
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.titulos{
+    margin:10px;
+    text-align: center;
+}
+
+i.fa-truck{
+    transition: rotate 850ms;
+}
+
+i.fa-truck:hover{
+    rotate: -90deg;
+}
+
+.datosProducto{
+    border-top: 1px solid #ebebeb;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px;
+}
+main section article div div {
+    position: relative;
+}
+
+main section article div div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: -30px;
+}
+
+.fotoProducto{    
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    text-align: center;
+}
+.descuento{
+    font-size: 0.66em;
+}
+
+.estilo-verde{
+    color: #39b54a;
+}
+.estilo-oscuro{
+    color: #000000;
+}
+.fotoProducto img{  
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.descripcion{
+    margin-top: 10px;
+    display: none;
+}
+
+/*--------- FOOTER ---------*/
+footer{
+    margin-top: auto;
+
+}
+
+footer div{
+    background-color : #ffffff;
+}
+
+.valores{    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div section{    
+    width: 100%;
+    display: flex;
+    text-align: center; 
+    flex-direction: column;  
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.derechos-autor{
+    text-align: left; 
+    padding: 12px 5px;
+    background-color : #ffffff;
+
+}
+
+.iconos-centrados{
+    font-size: 2em;
+    color: #1259c3;
+    padding: 10px;
+}
+
+.iconos-centrados:hover{
+    color: #FF9A56;
+}
+
+/*--------- MEDIA QUERIES ---------*/
+/*@media (min-width: 361px) {*/
+@media (min-width: 150px) {
+    
+    .producto-base:hover .descripcion{
+        display: block;
+    }
+    .producto-base:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .menu{
+        display: none;
+    }
+
+    .burger-menu{
+        display: flex;
+    }
+    
+    .compra{
+        display: block
+    }
+    .producto-base{
+        max-width: 80%;
+    }
+}
+
+
+@media (min-width: 769px) {
+
+    .UltimasVisitas, .Ofertas{  
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+    .producto-base{
+        max-width: 44%;
+    }
+
+}
+@media (min-width: 992px) {
+
+    .burger-menu{
+        display: none;
+    }
+    
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .icon-search{
+        width: 70%;
+    }
+    .compra{
+        width: 30%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px;
+    }
+
+    .menu-no-icons, .menu-icons{
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;   
+    }
+    
+    .menu-no-icons li a:hover, .menu-icons li a:hover{
+        color: #1259c3;  
+        font-weight: bold; 
+    }
+
+    .menu-no-icons li, .menu-icons li{
+        flex: auto;
+    }
+    
+    .producto-base{
+        max-width: 22%;
+    }
+
+    .UltimasVisitas, .Ofertas{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-center{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;    
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+}
